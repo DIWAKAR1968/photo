@@ -35,13 +35,13 @@ function App() {
           backgroundColor: null,
           width: frameImageRect.width,
           height: frameImageRect.height,
-          x: frameImageRect.left,
-          y: frameImageRect.top,
+          x: offsetX,
+          y: offsetY,
         }).then(async (canvas) => {
           const screenshot = canvas.toDataURL();
           const base64Response = await fetch(screenshot);
           const blob = await base64Response.blob();
-        
+
           saveAs(blob, "photo.jpeg");
         });
       }
