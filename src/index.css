@@ -80,41 +80,7 @@
   z-index: 0;
 }
 
-.line1 {
-  position: absolute;
-  margin-top: 19%;
-  height: 2px;
-  background-color: white; /* Use background-color instead of color */
-  width: 57%;
-  margin-left: 17%;
-}
 
-.line2 {
-  position: absolute;
-  margin-top: 25%;
-  height: 2px;
-  background-color: white; /* Use background-color instead of color */
-  width: 57%;
-  margin-left: 17%;
-}
-
-.line3 {
-  position: absolute;
-  margin-top: 29%;
-  height: 2px;
-  background-color: white; /* Use background-color instead of color */
-  width: 57%;
-  margin-left: 17%;
-}
-
-.line4 {
-  position: absolute;
-  margin-top: 34.25%;
-  height: 2px;
-  background-color: white; /* Use background-color instead of color */
-  width: 56%;
-  margin-left: 17%;
-}
 
 .right {
   width: 30%;
