@@ -194,6 +194,7 @@
   height: 100vh;
   background-color: black;
   color: white;
+  overflow: hidden;
 }
 
 /* For the message in portrait mode */
