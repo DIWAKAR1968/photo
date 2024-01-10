@@ -7,6 +7,7 @@ import frame from "./images/frame.png";
 
 function App() {
   const [imgSrc, setImgSrc] = useState(null);
+  const [isPortrait, setIsPortrait] = useState(window.matchMedia("(orientation: portrait)").matches);
   const webcamRef = useRef(null);
 
   const capture = () => {
@@ -58,21 +59,22 @@ function App() {
     facingMode: "user",
   };
 
-  const isPortrait = () => {
-    return window.matchMedia("(orientation: portrait)").matches;
-  };
-
-  const renderPortraitMessage = () => {
-    return (
-      <div className="portrait-mode">
-        <h2>Please rotate your device</h2>
-      </div>
-    );
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      setIsPortrait(window.innerHeight > window.innerWidth);
+    };
+  
+    window.addEventListener('resize', handleResize);
+  
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <div>
-      {isPortrait() ? (
+      {isPortrait ? (
         <div className="portrait-mode">
           <h2>Please rotate your device</h2>
         </div>
