@@ -35,7 +35,18 @@
   border-bottom-right-radius: 25px;
   border-top-left-radius: 25px;
   background-color: white;
+  position: relative;
+
   /* margin-top: 52%; */
+}
+
+.but1::after {
+  content: "";
+  position: absolute;
+  left: 25%; /* Center the line */
+  bottom: -1%; /* Position the line below the button */
+  width: 620%;
+  border-bottom: 1px solid black;
 }
 
 .but2 {
