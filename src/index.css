@@ -45,8 +45,9 @@
   position: absolute;
   left: 25%; /* Center the line */
   bottom: -1%; /* Position the line below the button */
-  width: 620%;
-  border-bottom: 1px solid black;
+  width: 617%;
+  border-bottom: 3px solid white;
+  /* height: 2px; */
 }
 
 .but2 {
@@ -58,7 +59,18 @@
   border-bottom-right-radius: 25px;
   border-top-left-radius: 25px;
   background-color: white;
+  position: relative;
   /* margin-top: -9%; */
+}
+
+.but2::after {
+  content: "";
+  position: absolute;
+  left: 25%; /* Center the line */
+  bottom: -1%; /* Position the line below the button */
+  width: 617%;
+  border-bottom: 3px solid white;
+  /* height: 2px; */
 }
 
 .but3 {
@@ -70,7 +82,18 @@
   border-bottom-right-radius: 25px;
   border-top-left-radius: 25px;
   background-color: white;
+  position: relative;
   /* margin-top: -5%; */
+}
+
+.but3::after {
+  content: "";
+  position: absolute;
+  left: 25%; /* Center the line */
+  bottom: -1%; /* Position the line below the button */
+  width: 610%;
+  border-bottom: 3px solid white;
+  /* height: 2px; */
 }
 
 .but4 {
@@ -81,6 +104,17 @@
   border: none;
   border-bottom-right-radius: 25px;
   border-top-left-radius: 25px;
+  position: relative;
+}
+
+.but4::after {
+  content: "";
+  position: absolute;
+  left: 25%; /* Center the line */
+  bottom: -1%; /* Position the line below the button */
+  width: 606%;
+  border-bottom: 3px solid white;
+  /* height: 2px; */
 }
 
 .frame_image_container {
