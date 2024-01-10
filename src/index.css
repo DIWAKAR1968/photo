@@ -152,7 +152,7 @@
 @media screen and (max-width: 900px) {
   .camera_image {
     z-index: 1;
-    margin-top: -85%;
+    margin-top: -90%;
     position: absolute;
     margin-left: 17%;
   }
