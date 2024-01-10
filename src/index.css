@@ -189,17 +189,22 @@
 /* For portrait mode */
 .portrait-mode {
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-color: black;
-  color: white;
-  overflow: hidden;
+  align-items: center;
+  height: 100vh; /* Set the height to the viewport height */
+  overflow: hidden; /* Prevent scrolling */
+  position: fixed; /* Fix position */
+  width: 100%; /* Full width */
+  left: 0; /* Align left */
+  top: 0; /* Align top */
+  background-color: black; /* Background color */
+  color: white; /* Text color */
 }
 
 /* For the message in portrait mode */
 .portrait-message {
   text-align: center;
+  margin: 0;
 }
 
 

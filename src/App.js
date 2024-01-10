@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Webcam from "react-webcam";
 import { saveAs } from "file-saver";
 import html2canvas from "html2canvas";
