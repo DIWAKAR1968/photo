@@ -1,13 +1,148 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main_container {
+  background-image: url("images/bg.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  position: relative;
+}
+
+.button_container {
+  width: 30%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  /* background-color: blueviolet; */
+  /* position: relative; */
+  gap: 10%;
+  padding-top: 17%;
+}
+
+.but1 {
+  width: 30%;
+  /* position: absolute; */
+  margin-left: 55%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: none;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  background-color: white;
+  /* margin-top: 52%; */
+}
+
+.but2 {
+  width: 30%;
+  margin-left: 55%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: none;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  background-color: white;
+  /* margin-top: -9%; */
+}
+
+.but3 {
+  width: 30%;
+  margin-left: 55%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: none;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  background-color: white;
+  /* margin-top: -5%; */
+}
+
+.but4 {
+  width: 30%;
+  margin-left: 55%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: none;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.frame_image_container {
+  width: 40%;
+  margin: 0 auto;
+  /* background-color: aqua; */
+  position: relative;
+  z-index: 0;
+}
+
+.line1 {
+  position: absolute;
+  margin-top: 18%;
+  height: 2px;
+  background-color: white; /* Use background-color instead of color */
+  width: 57%;
+  margin-left: 17%;
+}
+
+.line2 {
+  position: absolute;
+  margin-top: 23.25%;
+  height: 2px;
+  background-color: white; /* Use background-color instead of color */
+  width: 57%;
+  margin-left: 17%;
+}
+
+.line3 {
+  position: absolute;
+  margin-top: 29%;
+  height: 2px;
+  background-color: white; /* Use background-color instead of color */
+  width: 57%;
+  margin-left: 17%;
+}
+
+.line4 {
+  position: absolute;
+  margin-top: 34.25%;
+  height: 2px;
+  background-color: white; /* Use background-color instead of color */
+  width: 56%;
+  margin-left: 17%;
+}
+
+.right {
+  width: 30%;
+  float: right;
+}
+
+.frame_image {
+  width: 60%;
+  height: 70%;
+  position: absolute;
+  margin-top: 16%;
+  margin-left: 15%;
+  z-index: 2;
+  position: relative;
+}
+
+.camera_image {
+  z-index: 1;
+  margin-top: -78%;
+  position: absolute;
+  margin-left: 17%;
+}
+
+@media screen and (max-width: 900px) {
+  .camera_image {
+    z-index: 1;
+    margin-top: -85%;
+    position: absolute;
+    margin-left: 17%;
+  }
 }
