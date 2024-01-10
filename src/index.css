@@ -26,11 +26,11 @@
 }
 
 .but1 {
-  width: 30%;
+  width: 60%;
   /* position: absolute; */
-  margin-left: 55%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  margin-left: 20%;
+  padding-top: 3.25%;
+  padding-bottom: 3.25%;
   border: none;
   border-bottom-right-radius: 25px;
   border-top-left-radius: 25px;
@@ -43,18 +43,18 @@
 .but1::after {
   content: "";
   position: absolute;
-  left: 25%; /* Center the line */
+  left: 0%; /* Center the line */
   bottom: -1%; /* Position the line below the button */
-  width: 617%;
+  width: 379%;
   border-bottom: 3px solid white;
   /* height: 2px; */
 }
 
 .but2 {
-  width: 30%;
-  margin-left: 55%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  width: 60%;
+  margin-left: 20%;
+  padding-top: 3.25%;
+  padding-bottom: 3.25%;
   border: none;
   border-bottom-right-radius: 25px;
   border-top-left-radius: 25px;
@@ -66,18 +66,18 @@
 .but2::after {
   content: "";
   position: absolute;
-  left: 25%; /* Center the line */
+  left: 0%; /* Center the line */
   bottom: -1%; /* Position the line below the button */
-  width: 617%;
+  width: 379%;
   border-bottom: 3px solid white;
   /* height: 2px; */
 }
 
 .but3 {
-  width: 30%;
-  margin-left: 55%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  width: 60%;
+  margin-left: 20%;
+  padding-top: 3.25%;
+  padding-bottom: 3.25%;
   border: none;
   border-bottom-right-radius: 25px;
   border-top-left-radius: 25px;
@@ -89,18 +89,18 @@
 .but3::after {
   content: "";
   position: absolute;
-  left: 25%; /* Center the line */
+  left: 0%; /* Center the line */
   bottom: -1%; /* Position the line below the button */
-  width: 610%;
+  width: 375%;
   border-bottom: 3px solid white;
   /* height: 2px; */
 }
 
 .but4 {
-  width: 30%;
-  margin-left: 55%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  width: 60%;
+  margin-left: 20%;
+  padding-top: 3.25%;
+  padding-bottom: 3.25%;
   border: none;
   border-bottom-right-radius: 25px;
   border-top-left-radius: 25px;
@@ -110,9 +110,9 @@
 .but4::after {
   content: "";
   position: absolute;
-  left: 25%; /* Center the line */
+  left: 0%; /* Center the line */
   bottom: -1%; /* Position the line below the button */
-  width: 606%;
+  width: 373%;
   border-bottom: 3px solid white;
   /* height: 2px; */
 }
