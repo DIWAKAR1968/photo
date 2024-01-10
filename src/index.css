@@ -170,16 +170,16 @@
 .frame_image {
   width: 60%;
   height: 70%;
-  position: absolute;
-  margin-top: 20%;
-  margin-left: 15%;
+  
+  top: 20%;
+  left: 15%;
   z-index: 2;
   position: relative;
 }
 
 .camera_image {
   z-index: 1;
-  margin-top: -78%;
+  margin-top: -56%;
   position: absolute;
   margin-left: 17%;
 }
