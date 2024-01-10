@@ -184,6 +184,26 @@
   margin-left: 17%;
 }
 
+/* Add these styles to your CSS file */
+
+/* For portrait mode */
+.portrait-mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+/* For the message in portrait mode */
+.portrait-message {
+  text-align: center;
+}
+
+
+
+
 @media screen and (max-width: 900px) {
   .camera_image {
     z-index: 1;

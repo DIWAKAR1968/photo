@@ -58,14 +58,26 @@ function App() {
     facingMode: "user",
   };
 
+  const isPortrait = () => {
+    return window.matchMedia("(orientation: portrait)").matches;
+  };
 
-
- 
+  const renderPortraitMessage = () => {
+    return (
+      <div className="portrait-mode">
+        <h2>Please rotate your device</h2>
+      </div>
+    );
+  };
 
   return (
     <div>
-      <div className="main_container">
-        
+      {isPortrait() ? (
+        <div className="portrait-mode">
+          <h2>Please rotate your device</h2>
+        </div>
+      ) : (
+        <div className="main_container">
           <div className="line1"></div>
           <div className="line2"></div>
           <div className="line3"></div>
@@ -82,29 +94,29 @@ function App() {
               SAVE
             </button>
           </div>
-        
-        <div className="frame_image_container">
-          <img className="frame_image" src={frame} />
-          <div className="camera_image">
-            {imgSrc ? (
-              <img src={imgSrc} />
-            ) : (
-              <div className="frame">
-                <Webcam
-                  audio={false}
-                  ref={webcamRef}
-                  screenshotFormat="image/jpeg"
-                  className="webcam"
-                  videoConstraints={videoConstraints}
-                />
-              </div>
-            )}
+
+          <div className="frame_image_container">
+            <img className="frame_image" src={frame} />
+            <div className="camera_image">
+              {imgSrc ? (
+                <img src={imgSrc} />
+              ) : (
+                <div className="frame">
+                  <Webcam
+                    audio={false}
+                    ref={webcamRef}
+                    screenshotFormat="image/jpeg"
+                    className="webcam"
+                    videoConstraints={videoConstraints}
+                  />
+                </div>
+              )}
+            </div>
           </div>
+
+          <img className="right" src={image} />
         </div>
-          
-        <img className="right" src={image} />
-        
-      </div>
+      )}
     </div>
   );
 }
