@@ -19,15 +19,14 @@
   float: left;
   display: flex;
   flex-direction: column;
-  /* background-color: blueviolet; */
-  /* position: relative; */
+
   gap: 6%;
   padding-top: 16%;
 }
 
 .but1 {
   width: 60%;
-  /* position: absolute; */
+
   margin-left: 20%;
   padding-top: 3.25%;
   padding-bottom: 3.25%;
@@ -40,8 +39,6 @@
   font-size: 1.5vw;
   font-weight: bold;
   color: #f72585;
-
-  /* margin-top: 52%; */
 }
 
 .but1:hover {
@@ -51,13 +48,11 @@
 .but1::after {
   content: "";
   position: absolute;
-  left: 0%; /* Center the line */
-  bottom: -1%; /* Position the line below the button */
+  left: 0%;
+  bottom: -1%;
   width: 379%;
   border-bottom: 3px solid white;
-  /* height: 2px; */
 }
-
 
 .but2 {
   width: 60%;
@@ -73,7 +68,6 @@
   font-size: 1.5vw;
   font-weight: bold;
   color: #f72585;
-  /* margin-top: -9%; */
 }
 
 .but2:hover {
@@ -83,11 +77,10 @@
 .but2::after {
   content: "";
   position: absolute;
-  left: 0%; /* Center the line */
-  bottom: -1%; /* Position the line below the button */
+  left: 0%;
+  bottom: -1%;
   width: 379%;
   border-bottom: 3px solid white;
-  /* height: 2px; */
 }
 
 .but3 {
@@ -104,7 +97,6 @@
   font-size: 1.5vw;
   font-weight: bold;
   color: #f72585;
-  /* margin-top: -5%; */
 }
 
 .but3:hover {
@@ -114,12 +106,10 @@
 .but3::after {
   content: "";
   position: absolute;
-  left: 0%; /* Center the line */
-  bottom: -1%; /* Position the line below the button */
+  left: 0%;
+  bottom: -1%;
   width: 375%;
   border-bottom: 3px solid white;
-  
-  /* height: 2px; */
 }
 
 .but4 {
@@ -145,22 +135,20 @@
 .but4::after {
   content: "";
   position: absolute;
-  left: 0%; /* Center the line */
-  bottom: -1%; /* Position the line below the button */
+  left: 0%;
+  bottom: -1%;
   width: 373%;
   border-bottom: 3px solid white;
-  /* height: 2px; */
 }
 
 .frame_image_container {
   width: 40%;
   margin: 0 auto;
-  /* background-color: aqua; */
+  margin: 0;
+  padding: 0;
+
   position: relative;
-  z-index: 0;
 }
-
-
 
 .right {
   width: 30%;
@@ -170,45 +158,42 @@
 .frame_image {
   width: 60%;
   height: 70%;
-  
+  margin: 0;
+  padding: 0;
   margin-top: 20%;
   margin-left: 15%;
   z-index: 2;
   position: relative;
+  
+
 }
 
 .camera_image {
   z-index: 1;
+
   margin-top: -78%;
   position: absolute;
   margin-left: 17%;
 }
 
-/* Add these styles to your CSS file */
-
-/* For portrait mode */
 .portrait-mode {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Set the height to the viewport height */
-  overflow: hidden; /* Prevent scrolling */
-  position: fixed; /* Fix position */
-  width: 100%; /* Full width */
-  left: 0; /* Align left */
-  top: 0; /* Align top */
-  background-color: black; /* Background color */
-  color: white; /* Text color */
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: black;
+  color: white;
 }
 
-/* For the message in portrait mode */
 .portrait-message {
   text-align: center;
   margin: 0;
 }
-
-
-
 
 @media screen and (max-width: 900px) {
   .camera_image {

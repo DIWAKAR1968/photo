@@ -3,7 +3,7 @@ import Webcam from "react-webcam";
 import { saveAs } from "file-saver";
 import html2canvas from "html2canvas";
 import image from "./images/right-img.png";
-import frame from "./images/frame.png";
+import frame from "./images/frame-3.png";
 
 function App() {
   const [imgSrc, setImgSrc] = useState(null);
@@ -43,7 +43,7 @@ function App() {
           const base64Response = await fetch(screenshot);
           const blob = await base64Response.blob();
 
-          saveAs(blob, "photo.jpeg");
+          saveAs(blob, "photo.png");
         });
       }
     } else {
